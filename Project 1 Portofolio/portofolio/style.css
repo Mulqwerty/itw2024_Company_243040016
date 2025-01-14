@@ -127,6 +127,10 @@ font-weight: bold;
     background-color: #03a053;
 }
 
+.dropdown.active {
+    display: block;
+  }
+
 /* Main menu */
 
 section{
@@ -142,7 +146,7 @@ section .main-container{
 }
 
 .main-container .image{
-    width: 500px;
+    width: 400px;
     height: 80vh;
     border-radius: 100%;
     overflow: hidden;
@@ -229,9 +233,19 @@ section .main-container{
         content: "Web Developer";
         opacity: 0;
     }
-    25% {
+    15% {
         opacity: 1;
     }
+
+    30% {
+        content: "Pelajar";
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+    
     50% {
         content: "Coding Enthusiast";
         opacity: 0;
@@ -531,7 +545,7 @@ section .button button:hover{
 
 .company .company-details{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -646,6 +660,10 @@ footer .text span a:hover{
 }
 
 @media (max-width: 968px) {
+    nav.open {
+        left: 0;
+    }
+
     nav .logo {
         position: absolute;
         top: 16px;
